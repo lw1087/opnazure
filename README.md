@@ -38,6 +38,11 @@ In case of Active-Active the URL should be <https://PublicIP:50443> for Primary 
 
 ## Updates
 
+## March-2026
+
+- OPNSense 26.1 as default version (e.g. 26.1.3)
+- Azure Linux Agent to 2.15.0.1
+
 ## March-2025
 
 - OPNSense 25.1 as default version
@@ -92,7 +97,7 @@ In case of Active-Active the URL should be <https://PublicIP:50443> for Primary 
 
 ## Overview
 
-This OPNsense solution is installed in FreeBSD 12.0 (Azure Image).
+This OPNsense solution is installed in FreeBSD 14.1 (Azure Image).
 Here is what you will see when you deploy this Template:
 
 There are 2 different deployment scenarios:
