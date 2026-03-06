@@ -1,18 +1,20 @@
 # OPNsense Firewall on FreeBSD VM
 
+Repository: [https://github.com/lw1087/opnazure](https://github.com/lw1087/opnazure)
+
 CI Name | Actions Workflow | CI Status |
 |--------|--------|--------|
-| BicepBuild | [bicepBuild.yml](./.github/workflows/bicepBuild.yml) | [![bicepBuildCI](https://github.com/dmauser/opnazure/actions/workflows/bicepBuild.yml/badge.svg?branch=dev)](https://github.com/dmauser/opnazure/actions/workflows/bicepBuild.yml) |
-| Deployment Checker - Active Active | [deploymentChecker-active-active.yml](./.github/workflows/deploymentChecker-active-active.yml) | [![deploymentCheckeractiveactiveactiveCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-active-active.yml/badge.svg?branch=master)](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-active-active.yml) |
-| Deployment Checker - two nics | [deploymentChecker-two-nics.yml](./.github/workflows/deploymentChecker-two-nics.yml) | [![deploymentCheckertwonicsCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-two-nics.yml/badge.svg?branch=master)](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-two-nics.yml) |
-| Deployment Checker - new vnet Active Active | [deploymentChecker-newvnet-active-active.yml](./.github/workflows/deploymentChecker-newvnet-active-active.yml) | [![deploymentCheckeractivenewvnetactiveactiveCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-active-active.yml/badge.svg?branch=master)](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-active-active.yml) |
-| Deployment Checker - new vnet two nics | [deploymentChecker-newvnet-two-nics.yml](./.github/workflows/deploymentChecker-two-nics.yml) | [![deploymentCheckernewvnettwonicsCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-newvnet-two-nics.yml/badge.svg?branch=master)](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-newvnet-two-nics.yml) |
+| BicepBuild | [bicepBuild.yml](./.github/workflows/bicepBuild.yml) | [![bicepBuildCI](https://github.com/lw1087/opnazure/actions/workflows/bicepBuild.yml/badge.svg?branch=dev)](https://github.com/lw1087/opnazure/actions/workflows/bicepBuild.yml) |
+| Deployment Checker - Active Active | [deploymentChecker-active-active.yml](./.github/workflows/deploymentChecker-active-active.yml) | [![deploymentCheckeractiveactiveactiveCI](https://github.com/lw1087/opnazure/actions/workflows/deploymentChecker-active-active.yml/badge.svg?branch=master)](https://github.com/lw1087/opnazure/actions/workflows/deploymentChecker-active-active.yml) |
+| Deployment Checker - two nics | [deploymentChecker-two-nics.yml](./.github/workflows/deploymentChecker-two-nics.yml) | [![deploymentCheckertwonicsCI](https://github.com/lw1087/opnazure/actions/workflows/deploymentChecker-two-nics.yml/badge.svg?branch=master)](https://github.com/lw1087/opnazure/actions/workflows/deploymentChecker-two-nics.yml) |
+| Deployment Checker - new vnet Active Active | [deploymentChecker-newvnet-active-active.yml](./.github/workflows/deploymentChecker-newvnet-active-active.yml) | [![deploymentCheckeractivenewvnetactiveactiveCI](https://github.com/lw1087/opnazure/actions/workflows/deploymentChecker-active-active.yml/badge.svg?branch=master)](https://github.com/lw1087/opnazure/actions/workflows/deploymentChecker-active-active.yml) |
+| Deployment Checker - new vnet two nics | [deploymentChecker-newvnet-two-nics.yml](./.github/workflows/deploymentChecker-two-nics.yml) | [![deploymentCheckernewvnettwonicsCI](https://github.com/lw1087/opnazure/actions/workflows/deploymentChecker-newvnet-two-nics.yml/badge.svg?branch=master)](https://github.com/lw1087/opnazure/actions/workflows/deploymentChecker-newvnet-two-nics.yml) |
 
 **Deployment Wizard**
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdmauser%2Fopnazure%2Fmaster%2FARM%2Fmain.json%3F/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fdmauser%2Fopnazure%2Fmaster%2Fbicep%2FuiFormDefinition.json)
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Flw1087%2Fopnazure%2Fmaster%2FARM%2Fmain.json%3F/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Flw1087%2Fopnazure%2Fmaster%2Fbicep%2FuiFormDefinition.json)
 
-The template allows you to deploy an OPNsense Firewall VM using the opnsense-bootsrtap installation method. It creates an FreeBSD VM, does a silent install of OPNsense using a modified version of opnsense-bootstrap.sh with the settings provided.
+The template allows you to deploy an OPNsense Firewall VM using the opnsense-bootstrap installation method. It creates an FreeBSD VM, does a silent install of OPNsense using a modified version of opnsense-bootstrap.sh with the settings provided.
 
 OPNSense is based in FreeBSD what is the official OS image publisher in Azure. This template deploys a FreeBSD 14.1 VM and installs OPNSense using the opnsense-bootstrap installation method. For the first deployment in an Azure Subscription it's ***required to accept the legal terms*** of the Offer with PublisherId: 'thefreebsdfoundation', OfferId: 'freebsd-14_1'.
 
@@ -152,8 +154,10 @@ Build custom deployment form
 
 ## Feedbacks
 
-Please use Github [issues tab](https://github.com/dmauser/opnazure/issues) to provide feedback.
+Please use Github [issues tab](https://github.com/lw1087/opnazure/issues) to provide feedback.
 
 ## Credits
+
+This project is a fork of [dmauser/opnazure](https://github.com/dmauser/opnazure).
 
 Thanks for direct feedbacks and contributions from: Adam Torkar, Brian Wurzbacher, [Victor Santana](https://github.com/welasco) and Brady Sondreal, and many others shown on this repository as contributors.
